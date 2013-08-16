@@ -1,0 +1,22 @@
+{
+  "name":"mychaelstyle/photo",
+  "description": "library for photo",
+  "keywords": ["Amazon","AWS","S3","SNS"],
+  "type": "library",
+  "license": "Apache2",
+  "authers": [
+    {
+      "name":"Masanori Nakashima",
+      "email":"",
+      "homepage":"http://www.mychaelstyle.com/"
+    }
+  ],
+  "require": {
+    "mychaelstyle/php-utils": "0.*"
+    "aws/aws-sdk-php": "2.*"
+  },
+  "require-dev":{
+    "phpunit/phpunit": "3.*",
+    "phing/phing": "2.*"
+  }
+}

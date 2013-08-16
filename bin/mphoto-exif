@@ -1,0 +1,17 @@
+#!/bin/sh
+
+DIR_CUR=`pwd`
+DIR_SCRIPT=`dirname $0`
+cd $DIR_SCRIPT
+cd ..
+DIR_BASE=`pwd`
+cd $DIR_CUR
+
+if [ "${1}" = "" ]
+then
+  echo "\n[Error] Photo file path is required\n";
+  exit 1;
+fi
+
+php ${DIR_BASE}/src/mychaelstyle/photo/exif_show.php "${1}"
+
